@@ -31,6 +31,18 @@ public class ModRecipes {
 				'X', Blocks.obsidian,
 				'Y', VapePenMythical.VapePenMythical,
 				'Z', Items.diamond);
+		
+		GameRegistry.addRecipe(new ItemStack(ModItems.bullet, 64),
+				"X",
+				"Y",
+				'X', Items.iron_ingot,
+				'Y', Items.gunpowder);
+		
+		GameRegistry.addRecipe(new ItemStack(Gun.Gun, 16),
+				"XXX",
+				"  Y",
+				'X', Items.iron_ingot,
+				'Y', Blocks.planks);
 	}
 
 }

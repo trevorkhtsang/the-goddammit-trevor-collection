@@ -17,19 +17,23 @@ public class Main {
 	
     public static final String NAME = "The Goddammit Trevor Collection";
     public static final String MODID = "goddammittrevorcollection";
-    public static final String VERSION = "1.7.10 Alpha 0.001";
+    public static final String VERSION = "1.7.10 Alpha 0.002";
  
     @Mod.Instance("goddammittrevorcollection")
     public static Main instance;
+    
+    int modEntityId = 0;
  
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
     	proxy.preInit(event);
+    	proxy.registerRenderers();
     }
  
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
     	proxy.init(event);
+    	proxy.registerRenderers();
     }
  
     @Mod.EventHandler
