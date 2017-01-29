@@ -28,8 +28,17 @@ public static Item VapePen;
 	
 	@Override
 	public ItemStack onItemRightClick(ItemStack itemstack, World world, EntityPlayer player) {
-		player.swingItem();
-		world.spawnParticle("explode", player.posX, player.posY, player.posZ, player.motionX, player.motionY, player.motionZ);
+		if(world.isRemote) {
+			player.swingItem();
+			world.spawnParticle(
+					"explode", 
+					player.posX, 
+					player.posY, 
+					player.posZ, 
+					player.motionX, 
+					player.motionY, 
+					player.motionZ);
+		}
 		return itemstack;
 	}
 }

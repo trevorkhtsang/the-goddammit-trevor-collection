@@ -1,12 +1,9 @@
 package com.awebsite.idonthave;
 
-import com.awebsite.idonthave.init.ModItems;
-import com.awebsite.idonthave.init.ModRecipes;
-import com.awebsite.idonthave.init.VapePen;
-import com.awebsite.idonthave.init.VapePenLegendary;
-import com.awebsite.idonthave.init.VapePenMythical;
+import com.awebsite.idonthave.proxies.CommonProxy;
 
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -15,30 +12,29 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 public class Main {
 	
-    public static final String NAME = "Test Mod Please Ignore";
-    public static final String MODID = "testmodpleaseignore";
+	@SidedProxy(clientSide = "com.awebsite.idonthave.proxies.ClientProxy", serverSide = "com.awebsite.idonthave.proxies.ServerProxy")
+	public static CommonProxy proxy;
+	
+    public static final String NAME = "The Goddammit Trevor Collection";
+    public static final String MODID = "goddammittrevorcollection";
     public static final String VERSION = "1.7.10 Alpha 0.001";
  
-    @Mod.Instance("testmodpleaseignore")
+    @Mod.Instance("goddammittrevorcollection")
     public static Main instance;
  
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-    	VapePen.init();
-    	VapePenMythical.init();
-    	VapePenLegendary.init();
-    	ModItems.init();
-    	ModRecipes.init();
+    	proxy.preInit(event);
     }
  
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
-
+    	proxy.init(event);
     }
  
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event) {
-    	
+    	proxy.postInit(event);
     }
 }
 
