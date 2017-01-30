@@ -2,7 +2,9 @@ package com.awebsite.idonthave.proxies;
 
 import com.awebsite.idonthave.init.EntityBullet;
 import com.awebsite.idonthave.init.EntityGun;
+import com.awebsite.idonthave.init.EntityGunGun;
 import com.awebsite.idonthave.init.Gun;
+import com.awebsite.idonthave.init.GunGun;
 import com.awebsite.idonthave.init.ModItems;
 
 import cpw.mods.fml.client.registry.RenderingRegistry;
@@ -20,6 +22,7 @@ public class ClientProxy extends CommonProxy {
 	//register entity renderers
 	RenderingRegistry.registerEntityRenderingHandler(EntityBullet.class, new RenderSnowball(ModItems.bullet));
 	RenderingRegistry.registerEntityRenderingHandler(EntityGun.class, new RenderSnowball(Gun.Gun));
+	RenderingRegistry.registerEntityRenderingHandler(EntityGunGun.class, new RenderSnowball(GunGun.GunGun));
 	}
 	
 	@Override
