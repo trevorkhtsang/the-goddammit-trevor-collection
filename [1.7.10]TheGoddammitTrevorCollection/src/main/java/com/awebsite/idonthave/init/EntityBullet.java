@@ -1,5 +1,7 @@
 package com.awebsite.idonthave.init;
 
+import com.awebsite.idonthave.Main;
+
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.projectile.EntitySnowball;
 import net.minecraft.util.DamageSource;
@@ -38,7 +40,15 @@ public class EntityBullet extends EntitySnowball {
 
         for (int i = 0; i < 4; ++i)
         {
-            this.worldObj.spawnParticle("itemcrack_goddammittrevorcollection:bullet", this.posX, this.posY, this.posZ, 0.0D, 0.0D, 0.0D);
+            this.worldObj.spawnParticle(
+            		"itemcrack_" + Main.MODID + ":" + ModItems.bullet.getUnlocalizedName(), 
+            		this.posX, 
+            		this.posY, 
+            		this.posZ, 
+            		0.0D, 
+            		0.0D, 
+            		0.0D
+            		);
         }
 
         if (!this.worldObj.isRemote)

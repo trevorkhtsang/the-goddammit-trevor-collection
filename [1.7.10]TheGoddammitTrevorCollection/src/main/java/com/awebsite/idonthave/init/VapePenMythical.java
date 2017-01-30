@@ -24,7 +24,18 @@ public static VapePen VapePenMythical;
 	@Override
 	public ItemStack onItemRightClick(ItemStack itemstack, World world, EntityPlayer player) {
 		player.swingItem();
-		world.spawnParticle("largeexplode", player.posX, player.posY, player.posZ, player.motionX, player.motionY, player.motionZ);
+			if(world.isRemote) {
+				for(int i = 0; i < 20; ++i)
+				world.spawnParticle(
+						"explode", 
+						player.posX,
+						player.posY, 
+						player.posZ, 
+						player.motionX, 
+						player.motionY, 
+						player.motionZ
+						);
+			}
 		return itemstack;
 	}
 }
