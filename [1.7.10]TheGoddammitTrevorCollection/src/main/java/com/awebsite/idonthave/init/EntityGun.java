@@ -4,13 +4,13 @@ import com.awebsite.idonthave.Main;
 
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
-import net.minecraft.entity.projectile.EntitySnowball;
+import net.minecraft.entity.projectile.EntityThrowable;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
 
-public class EntityGun extends EntitySnowball {
+public class EntityGun extends EntityThrowable {
 
     public EntityGun(World world)
     {
@@ -36,7 +36,7 @@ public class EntityGun extends EntitySnowball {
 
         if (movingObjectPosition.entityHit != null)
         {
-            float bulletDamage = 8;
+            float bulletDamage = 10;
             
             movingObjectPosition.entityHit.attackEntityFrom(DamageSource.causeThrownDamage(this, this.getThrower()), (float)bulletDamage);
         }
@@ -70,7 +70,17 @@ public class EntityGun extends EntitySnowball {
     }
     
     @Override
-    protected float getGravityVelocity() {
+    protected float getGravityVelocity()
+    {
     	return 0.0001F;
+    }
+
+    /**
+     * Sets velocity.
+     */
+    @Override
+    protected float func_70182_d()
+    {
+    	 return 5F;
     }
 }

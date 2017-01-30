@@ -61,4 +61,13 @@ public class EntityBullet extends EntitySnowball {
     protected float getGravityVelocity() {
     	return 0.0001F;
     }
+    
+    /**
+     * Sets velocity.
+     */
+    @Override
+    protected float func_70182_d()
+    {
+    	 return 5F;
+    }
 }
