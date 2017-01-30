@@ -1,6 +1,8 @@
 package com.awebsite.idonthave.proxies;
 
 import com.awebsite.idonthave.init.EntityBullet;
+import com.awebsite.idonthave.init.EntityGun;
+import com.awebsite.idonthave.init.Gun;
 import com.awebsite.idonthave.init.ModItems;
 
 import cpw.mods.fml.client.registry.RenderingRegistry;
@@ -15,10 +17,10 @@ public class ClientProxy extends CommonProxy {
 
 	@EventHandler @Override
 	public void registerRenderers() {	
-	//init entities
+	//register entity renderers
 	RenderingRegistry.registerEntityRenderingHandler(EntityBullet.class, new RenderSnowball(ModItems.bullet));
+	RenderingRegistry.registerEntityRenderingHandler(EntityGun.class, new RenderSnowball(Gun.Gun));
 	}
-
 	
 	@Override
 	public void preInit(FMLPreInitializationEvent event) {

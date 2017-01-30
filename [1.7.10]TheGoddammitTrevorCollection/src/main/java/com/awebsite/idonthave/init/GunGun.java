@@ -34,7 +34,7 @@ public class GunGun extends Item {
 	            world.playSoundAtEntity(player, "random.bow", 0.5F, 1.0F);
 	            if (!world.isRemote)
 	            {
-	                world.spawnEntityInWorld(new EntityBullet(world, player));
+	                world.spawnEntityInWorld(new EntityGun(world, player));
 	            }
 	        }
 	        return itemStack;

@@ -2,7 +2,9 @@ package com.awebsite.idonthave.proxies;
 
 import com.awebsite.idonthave.Main;
 import com.awebsite.idonthave.init.EntityBullet;
+import com.awebsite.idonthave.init.EntityGun;
 import com.awebsite.idonthave.init.Gun;
+import com.awebsite.idonthave.init.GunGun;
 import com.awebsite.idonthave.init.ModItems;
 import com.awebsite.idonthave.init.ModRecipes;
 import com.awebsite.idonthave.init.VapePen;
@@ -27,6 +29,7 @@ public class CommonProxy {
     	VapePenMythical.init();
     	VapePenLegendary.init();
     	Gun.init();
+    	GunGun.init();
 
     	//init default items/recipes
     	ModItems.init();
@@ -41,6 +44,7 @@ public class CommonProxy {
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
 		EntityRegistry.registerModEntity(EntityBullet.class, "Bullet", modEntityId++, Main.MODID, 64, 10, true);
+		EntityRegistry.registerModEntity(EntityGun.class, "EntityGun", modEntityId++, Main.MODID, 64, 10, true);
 	}
 	
 	@EventHandler
