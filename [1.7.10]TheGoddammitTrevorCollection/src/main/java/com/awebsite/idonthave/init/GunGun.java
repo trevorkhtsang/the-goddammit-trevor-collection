@@ -15,7 +15,7 @@ public class GunGun extends Item {
 	
 	public GunGun() {
 		setUnlocalizedName("gun_gun");
-		setTextureName(Main.MODID + ":gun_gun"); //TODO make texture
+		setTextureName(Main.MODID + ":gun_gun");
 		setCreativeTab(CreativeTabs.tabCombat);
 		setMaxStackSize(16);
 		setMaxDamage(0);
