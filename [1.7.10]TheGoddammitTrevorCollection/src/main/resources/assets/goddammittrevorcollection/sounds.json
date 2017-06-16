@@ -1,0 +1,12 @@
+{
+"ob_spawned": {
+	"category": "master",
+	"sounds": [{
+		"name": "ob_spawned", 
+		"stream": false}]},
+"ob_destroyed": {
+	"category": "master",
+	"sounds": [{
+	"name": "ob_destroyed", 
+	"stream": false}]}
+}

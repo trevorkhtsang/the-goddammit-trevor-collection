@@ -10,18 +10,15 @@ import net.minecraft.world.World;
 
 public class EntityBullet extends EntitySnowball {
 
-    public EntityBullet(World world)
-    {
+    public EntityBullet(World world) {
         super(world);
     }
 
-    public EntityBullet(World world, EntityLivingBase entity)
-    {
+    public EntityBullet(World world, EntityLivingBase entity) {
         super(world, entity);
     }
 
-    public EntityBullet(World world, double x, double y, double z)
-    {
+    public EntityBullet(World world, double x, double y, double z) {
         super(world, x, y, z);
     }
 
@@ -29,17 +26,14 @@ public class EntityBullet extends EntitySnowball {
      * Called when this EntityThrowable hits a block or entity.
      */
     @Override
-    protected void onImpact(MovingObjectPosition movingObjectPosition)
-    {
-        if (movingObjectPosition.entityHit != null)
-        {
+    protected void onImpact(MovingObjectPosition movingObjectPosition) {
+        if (movingObjectPosition.entityHit != null) {
             float bulletDamage = 4;
             
             movingObjectPosition.entityHit.attackEntityFrom(DamageSource.causeThrownDamage(this, this.getThrower()), (float)bulletDamage);
         }
 
-        for (int i = 0; i < 4; ++i)
-        {
+        for (int i = 0; i < 4; ++i) {
             this.worldObj.spawnParticle(
             		"itemcrack_" + Main.MODID + ":" + ModItems.bullet.getUnlocalizedName(), 
             		this.posX, 
@@ -51,8 +45,7 @@ public class EntityBullet extends EntitySnowball {
             		);
         }
 
-        if (!this.worldObj.isRemote)
-        {
+        if (!this.worldObj.isRemote) {
             this.setDead();
         }
     }
@@ -66,8 +59,7 @@ public class EntityBullet extends EntitySnowball {
      * Sets velocity.
      */
     @Override
-    protected float func_70182_d()
-    {
+    protected float func_70182_d() {
     	 return 5F;
     }
 }

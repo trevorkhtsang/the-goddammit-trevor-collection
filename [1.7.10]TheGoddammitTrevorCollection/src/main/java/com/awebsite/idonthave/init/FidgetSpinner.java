@@ -9,29 +9,29 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public class Gun extends Item {
+public class FidgetSpinner extends Item {
+
+	public static Item FidgetSpinner;
 	
-	public static Item Gun;
-	
-	public Gun() {
-		setUnlocalizedName("gun");
-		setTextureName(Main.MODID + ":gun");
+	public FidgetSpinner() {
+		setUnlocalizedName("fidget_spinner");
+		setTextureName(Main.MODID + ":fidget_spinner");
 		setCreativeTab(CreativeTabs.tabCombat);
-		setMaxStackSize(64);
+		setMaxStackSize(16);
 		setMaxDamage(0);
 	}
 	
 	public static void init() {
-		Gun = new Gun();
-		GameRegistry.registerItem(Gun, Gun.getUnlocalizedName());
+		FidgetSpinner = new FidgetSpinner();
+		GameRegistry.registerItem(FidgetSpinner, FidgetSpinner.getUnlocalizedName());
 	}
 	
 	@Override
 	public ItemStack onItemRightClick(ItemStack itemStack, World world, EntityPlayer player) {
-	        if (player.capabilities.isCreativeMode || player.inventory.consumeInventoryItem(ModItems.bullet)) {
+	        if (player.capabilities.isCreativeMode || player.inventory.consumeInventoryItem(FidgetSpinner)) {
 	            world.playSoundAtEntity(player, "random.bow", 0.5F, 1.0F);
 	            if (!world.isRemote) {
-	                world.spawnEntityInWorld(new EntityBullet(world, player));
+	                world.spawnEntityInWorld(new EntityFidgetSpinner(world, player));
 	            }
 	        }
 	        return itemStack;

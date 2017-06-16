@@ -1,15 +1,17 @@
-[{
-"modid": "testmodpleaseignore",
-"name": "Test Mod Please Ignore",
-"description": "Giving Minecraft AIDS, one meme at a time",
-"version": "Alpha 0.001",
-"credits": "captainweegee did this to us",
-"logoFile": "assets\testmodpleaseignore\textures\title.png",
-"mcversion": "1.7.10",
-"url": "http://lemonparty.org",
-"updateUrl": "no",
-"authorList": [ "captainweegee", "Jetpackin'", "Satan", "Cancer" ],
-"parent":"",
-"screenshots": [],
-"dependencies": []
-}]
+[
+{
+  "modid": "goddammittrevorcollection",
+  "name": "The Goddammit Trevor Collection",
+  "description": "Giving Minecraft AIDS, one meme at a time",
+  "mcversion": "1.7.10",
+  "version": "Alpha 0.002",
+  "url": "http://lemonparty.org",
+  "updateUrl": "no",
+  "authorList": [ "captainweegee", "Jetpackin'", "Satan"],
+  "credits": "captainweegee did this to us",
+  "logoFile": "assets\testmodpleaseignore\textures\title.png",
+  "screenshots": [],
+  "parent":"",
+  "dependencies": []
+}
+]

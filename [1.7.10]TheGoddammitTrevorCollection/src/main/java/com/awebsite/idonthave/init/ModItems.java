@@ -18,5 +18,4 @@ public class ModItems {
 		
 		GameRegistry.registerItem(bullet, bullet.getUnlocalizedName());
 	}
-
 }
