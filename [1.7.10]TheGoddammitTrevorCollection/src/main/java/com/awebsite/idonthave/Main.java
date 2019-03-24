@@ -1,6 +1,7 @@
 package com.awebsite.idonthave;
 
 import com.awebsite.idonthave.proxies.CommonProxy;
+import com.awebsite.idonthave.proxies.IProxy;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -15,9 +16,9 @@ public class Main {
 	@SidedProxy(clientSide = "com.awebsite.idonthave.proxies.ClientProxy", serverSide = "com.awebsite.idonthave.proxies.ServerProxy")
 	public static CommonProxy proxy;
 	
-    public static final String NAME = "The Goddammit Trevor Collection";
+    static final String NAME = "The Goddammit Trevor Collection";
     public static final String MODID = "goddammittrevorcollection";
-    public static final String VERSION = "1.7.10 Alpha 0.002";
+    static final String VERSION = "1.7.10 Alpha 0.002";
  
     @Mod.Instance("goddammittrevorcollection")
     public static Main instance;
