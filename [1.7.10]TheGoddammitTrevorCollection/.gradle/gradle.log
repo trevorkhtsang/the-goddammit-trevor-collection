@@ -1,33 +1,189 @@
-****************************
- Powered By MCP:             
- http://modcoderpack.com/    
- Searge, ProfMobius, Fesh0r, 
- R4wk, ZeuX, IngisKahn, bspkrs
- MCP Data version : unknown
-****************************
+#################################################
+         ForgeGradle 1.2-SNAPSHOT-fb514d3        
+  https://github.com/MinecraftForge/ForgeGradle  
+#################################################
+               Powered by MCP unknown               
+             http://modcoderpack.com             
+         by: Searge, ProfMobius, Fesh0r,         
+         R4wk, ZeuX, IngisKahn, bspkrs           
+#################################################
 :compileApiJava UP-TO-DATE
 :processApiResources UP-TO-DATE
 :apiClasses UP-TO-DATE
-:sourceMainJava
-:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
-1 warning
-
+:sourceMainJava UP-TO-DATE
+:compileJava UP-TO-DATE
 :processResources UP-TO-DATE
-:classes
-:jar
-:compileTestJava UP-TO-DATE
-:processTestResources UP-TO-DATE
-:testClasses UP-TO-DATE
-:test UP-TO-DATE
-:extractMcpData UP-TO-DATE
+:classes UP-TO-DATE
+:jar UP-TO-DATE
 :getVersionJson
 :extractUserDev UP-TO-DATE
-:genSrgs SKIPPED
-:reobf
-:assemble
-:check UP-TO-DATE
-:build
+:extractNatives UP-TO-DATE
+:getAssetsIndex
+:getAssets
+:makeStart
+[ant:javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+[ant:javac] 1 warning
+:runServer
+[19:29:06] [main/INFO] [GradleStart]: Extra: []
+[19:29:06] [main/INFO] [GradleStart]: Running with arguments: [--tweakClass, cpw.mods.fml.common.launcher.FMLServerTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[19:29:06] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLServerTweaker
+[19:29:06] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLServerTweaker
+[19:29:06] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[19:29:06] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLServerTweaker
+[19:29:06] [main/INFO] [FML]: Forge Mod Loader version 7.99.36.1558 for Minecraft 1.7.10 loading
+[19:29:06] [main/INFO] [FML]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_111, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jdk1.8.0_111\jre
+[19:29:06] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[19:29:06] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
+[19:29:06] [main/INFO] [GradleStart]: Injecting location in coremod cpw.mods.fml.relauncher.FMLCorePlugin
+[19:29:06] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
+[19:29:06] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[19:29:06] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLDeobfTweaker
+[19:29:06] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[19:29:06] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[19:29:06] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[19:29:06] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[19:29:08] [main/ERROR] [FML]: The binary patch set is missing. Either you are in a development environment, or things are not going to work!
+[19:29:12] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
+[19:29:12] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[19:29:12] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLDeobfTweaker
+[19:29:14] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[19:29:14] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.TerminalTweaker
+[19:29:14] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.TerminalTweaker
+[19:29:14] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.server.MinecraftServer}
+[19:29:24] [main/WARN] [FML]: =============================================================
+[19:29:24] [main/WARN] [FML]: MOD HAS DIRECT REFERENCE System.exit() THIS IS NOT ALLOWED REROUTING TO FML!
+[19:29:24] [main/WARN] [FML]: Offendor: net/minecraft/server/gui/MinecraftServerGui$1.windowClosing(Ljava/awt/event/WindowEvent;)V
+[19:29:24] [main/WARN] [FML]: Use FMLCommonHandler.exitJava instead
+[19:29:24] [main/WARN] [FML]: =============================================================
+[19:29:24] [Server thread/INFO]: Starting minecraft server version 1.7.10
+[19:29:25] [Server thread/INFO] [MinecraftForge]: Attempting early MinecraftForge initialization
+[19:29:25] [Server thread/INFO] [FML]: MinecraftForge v10.13.4.1558 Initialized
+[19:29:25] [Server thread/INFO] [FML]: Replaced 183 ore recipies
+[19:29:25] [Server thread/INFO] [MinecraftForge]: Completed early MinecraftForge initialization
+[19:29:26] [Server thread/INFO] [FML]: Found 0 mods from the command line. Injecting into mod discoverer
+[19:29:26] [Server thread/INFO] [FML]: Searching F:\ModHell\workspace\[1.7.10]TheGoddammitTrevorCollection\eclipse\mods for mods
+[19:29:33] [Server thread/INFO] [FML]: Forge Mod Loader has identified 4 mods to load
+[19:29:34] [Server thread/INFO] [FML]: Attempting connection with missing mods [mcp, FML, Forge, goddammittrevorcollection] at CLIENT
+[19:29:34] [Server thread/INFO] [FML]: Attempting connection with missing mods [mcp, FML, Forge, goddammittrevorcollection] at SERVER
+[19:29:34] [Server thread/INFO] [FML]: Processing ObjectHolder annotations
+[19:29:34] [Server thread/INFO] [FML]: Found 341 ObjectHolder annotations
+[19:29:34] [Server thread/INFO] [FML]: Identifying ItemStackHolder annotations
+[19:29:34] [Server thread/INFO] [FML]: Found 0 ItemStackHolder annotations
+[19:29:34] [Server thread/INFO] [FML]: Configured a dormant chunk cache size of 0
+[19:29:34] [Server thread/INFO] [STDOUT]: [com.awebsite.idonthave.proxies.ServerProxy:preInit:16]: Server side preinit
+[19:29:34] [Server thread/INFO] [FML]: Applying holder lookups
+[19:29:34] [Server thread/INFO] [FML]: Holder lookups applied
+[19:29:34] [Server thread/INFO] [FML]: Injecting itemstacks
+[19:29:34] [Server thread/INFO] [FML]: Itemstack injection complete
+[19:29:34] [Server thread/INFO]: Loading properties
+[19:29:34] [Server thread/INFO]: Default game type: CREATIVE
+[19:29:34] [Server thread/INFO]: Generating keypair
+[19:29:34] [Server thread/INFO]: Starting Minecraft server on *:25565
+[19:29:34] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[19:29:34] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[19:29:34] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[19:29:34] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[19:29:35] [Server thread/INFO] [STDOUT]: [com.awebsite.idonthave.proxies.ServerProxy:init:26]: Server side init
+[19:29:35] [Server thread/INFO] [FML]: Injecting itemstacks
+[19:29:35] [Server thread/INFO] [FML]: Itemstack injection complete
+[19:29:35] [Server thread/INFO] [STDOUT]: [com.awebsite.idonthave.proxies.ServerProxy:postInit:32]: Server side postinit
+[19:29:35] [Server thread/INFO] [FML]: Forge Mod Loader has successfully loaded 4 mods
+[19:29:35] [Server thread/INFO]: Preparing level "world"
+[19:29:35] [Server thread/INFO] [FML]: Injecting existing block and item data into this server instance
+[19:29:35] [Server thread/INFO] [FML]: Applying holder lookups
+[19:29:35] [Server thread/INFO] [FML]: Holder lookups applied
+[19:29:35] [Server thread/INFO] [FML]: Loading dimension 0 (world) (net.minecraft.server.dedicated.DedicatedServer@78f80092)
+[19:29:36] [Server thread/INFO] [FML]: Loading dimension 1 (world) (net.minecraft.server.dedicated.DedicatedServer@78f80092)
+[19:29:36] [Server thread/INFO] [FML]: Loading dimension -1 (world) (net.minecraft.server.dedicated.DedicatedServer@78f80092)
+[19:29:36] [Server thread/INFO]: Preparing start region for level 0
+[19:29:37] [Server thread/INFO]: Preparing spawn area: 35%
+[19:29:37] [Server thread/INFO]: Done (1.947s)! For help, type "help" or "?"
+[19:29:41] [Netty IO #2/INFO] [FML]: Client protocol version 2
+[19:29:41] [Netty IO #2/INFO] [FML]: Client attempting to join with 4 mods : goddammittrevorcollection@1.7.10 Alpha 0.002,FML@7.10.99.99,Forge@10.13.4.1558,mcp@9.05
+[19:29:41] [Netty IO #2/INFO] [FML]: Attempting connection with missing mods [] at CLIENT
+[19:29:41] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[19:29:41] [Server thread/INFO]: Player984[/127.0.0.1:52923] logged in with entity id 397 at (-63.5, 79.0, 262.5)
+[19:29:41] [Server thread/INFO]: Player984 joined the game
+[19:29:42] [Netty IO #3/INFO] [FML]: Client protocol version 2
+[19:29:42] [Netty IO #3/INFO] [FML]: Client attempting to join with 4 mods : goddammittrevorcollection@1.7.10 Alpha 0.002,FML@7.10.99.99,Forge@10.13.4.1558,mcp@9.05
+[19:29:42] [Netty IO #3/INFO] [FML]: Attempting connection with missing mods [] at CLIENT
+[19:29:42] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[19:29:42] [Server thread/INFO]: Player333[/127.0.0.1:52924] logged in with entity id 403 at (-46.5, 73.0, 252.5)
+[19:29:42] [Server thread/INFO]: Player333 joined the game
+[19:29:44] [Server thread/INFO]: Player333 has just earned the achievement [Taking Inventory]
+[19:30:08] [Server thread/INFO]: Player984 has just earned the achievement [Taking Inventory]
+[19:30:15] [Server thread/WARN]: Failed to handle packet for /127.0.0.1:52924
+java.lang.NullPointerException
+	at com.awebsite.idonthave.init.VapePenLegendary.onItemRightClick(VapePenLegendary.java:30) ~[VapePenLegendary.class:?]
+	at net.minecraft.item.ItemStack.useItemRightClick(ItemStack.java:164) ~[ItemStack.class:?]
+	at net.minecraft.server.management.ItemInWorldManager.tryUseItem(ItemInWorldManager.java:345) ~[ItemInWorldManager.class:?]
+	at net.minecraft.network.NetHandlerPlayServer.processPlayerBlockPlacement(NetHandlerPlayServer.java:576) ~[NetHandlerPlayServer.class:?]
+	at net.minecraft.network.play.client.C08PacketPlayerBlockPlacement.processPacket(C08PacketPlayerBlockPlacement.java:74) ~[C08PacketPlayerBlockPlacement.class:?]
+	at net.minecraft.network.play.client.C08PacketPlayerBlockPlacement.processPacket(C08PacketPlayerBlockPlacement.java:122) ~[C08PacketPlayerBlockPlacement.class:?]
+	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:241) ~[NetworkManager.class:?]
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:182) [NetworkSystem.class:?]
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:726) [MinecraftServer.class:?]
+	at net.minecraft.server.dedicated.DedicatedServer.updateTimeLightAndEntities(DedicatedServer.java:349) [DedicatedServer.class:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:614) [MinecraftServer.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:485) [MinecraftServer.class:?]
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752) [MinecraftServer$2.class:?]
+[19:30:15] [Server thread/INFO]: Player333 lost connection: TextComponent{text='Internal server error', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[19:30:15] [Server thread/INFO]: Player333 left the game
+[19:31:21] [Netty IO #5/INFO] [FML]: Client protocol version 2
+[19:31:21] [Netty IO #5/INFO] [FML]: Client attempting to join with 4 mods : goddammittrevorcollection@1.7.10 Alpha 0.002,FML@7.10.99.99,Forge@10.13.4.1558,mcp@9.05
+[19:31:21] [Netty IO #5/INFO] [FML]: Attempting connection with missing mods [] at CLIENT
+[19:31:21] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[19:31:21] [Server thread/INFO]: Player333[/127.0.0.1:52948] logged in with entity id 1264 at (-51.753962291258354, 87.87306914142074, 266.06562264445904)
+[19:31:21] [Server thread/INFO]: Player333 joined the game
+[19:31:38] [Server thread/WARN]: Failed to handle packet for /127.0.0.1:52948
+java.lang.NullPointerException
+	at com.awebsite.idonthave.init.VapePenLegendary.onItemRightClick(VapePenLegendary.java:30) ~[VapePenLegendary.class:?]
+	at net.minecraft.item.ItemStack.useItemRightClick(ItemStack.java:164) ~[ItemStack.class:?]
+	at net.minecraft.server.management.ItemInWorldManager.tryUseItem(ItemInWorldManager.java:345) ~[ItemInWorldManager.class:?]
+	at net.minecraft.network.NetHandlerPlayServer.processPlayerBlockPlacement(NetHandlerPlayServer.java:576) ~[NetHandlerPlayServer.class:?]
+	at net.minecraft.network.play.client.C08PacketPlayerBlockPlacement.processPacket(C08PacketPlayerBlockPlacement.java:74) ~[C08PacketPlayerBlockPlacement.class:?]
+	at net.minecraft.network.play.client.C08PacketPlayerBlockPlacement.processPacket(C08PacketPlayerBlockPlacement.java:122) ~[C08PacketPlayerBlockPlacement.class:?]
+	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:241) ~[NetworkManager.class:?]
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:182) [NetworkSystem.class:?]
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:726) [MinecraftServer.class:?]
+	at net.minecraft.server.dedicated.DedicatedServer.updateTimeLightAndEntities(DedicatedServer.java:349) [DedicatedServer.class:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:614) [MinecraftServer.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:485) [MinecraftServer.class:?]
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752) [MinecraftServer$2.class:?]
+[19:31:38] [Server thread/INFO]: Player333 lost connection: TextComponent{text='Internal server error', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[19:31:38] [Server thread/INFO]: Player333 left the game
+[19:31:43] [Netty IO #2/ERROR] [FML]: NetworkDispatcher exception
+java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_111]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_111]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_111]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_111]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[?:1.8.0_111]
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:436) ~[UnpooledUnsafeDirectByteBuf.class:?]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:870) ~[AbstractByteBuf.class:?]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208) ~[NioSocketChannel.class:?]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:87) [AbstractNioByteChannel$NioByteUnsafe.class:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:480) [NioEventLoop.class:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:447) [NioEventLoop.class:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:341) [NioEventLoop.class:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:101) [SingleThreadEventExecutor$2.class:?]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_111]
+[19:31:43] [Server thread/INFO]: Player984 lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: An existing connection was forcibly closed by the remote host], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[19:31:43] [Server thread/INFO]: Player984 left the game
+[19:31:46] [Server thread/INFO]: Stopping the server
+[19:31:46] [Server thread/INFO]: Stopping server
+[19:31:46] [Server thread/INFO]: Saving players
+[19:31:46] [Server thread/INFO]: Saving worlds
+[19:31:46] [Server thread/INFO]: Saving chunks for level 'world'/Overworld
+[19:31:46] [Server thread/INFO]: Saving chunks for level 'world'/Nether
+[19:31:46] [Server thread/INFO]: Saving chunks for level 'world'/The End
+[19:31:46] [Server thread/INFO] [FML]: Unloading dimension 0
+[19:31:46] [Server thread/INFO] [FML]: Unloading dimension -1
+[19:31:46] [Server thread/INFO] [FML]: Unloading dimension 1
+[19:31:46] [Server thread/INFO] [FML]: Applying holder lookups
+[19:31:46] [Server thread/INFO] [FML]: Holder lookups applied
+Java HotSpot(TM) 64-Bit Server VM warning: Using incremental CMS is deprecated and will likely be removed in a future release
 
 BUILD SUCCESSFUL
 
-Total time: 7.67 secs
+Total time: 2 mins 58.774 secs
