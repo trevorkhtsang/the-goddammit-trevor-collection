@@ -9,11 +9,11 @@ import net.minecraft.world.World;
 
 public class VapePenMythical extends VapePen {
 	
-public static VapePen VapePenMythical;
+static VapePen VapePenMythical;
 	
-	public VapePenMythical() {
-		setUnlocalizedName("mythical_vape_pen");
-		setTextureName(Main.MODID + ":mythical_vape_pen");
+	private VapePenMythical() {
+		setUnlocalizedName("vape_pen_mythical");
+		setTextureName(Main.MODID + ":vape_pen_mythical");
 	}
 
 	public static void init() {
@@ -24,7 +24,7 @@ public static VapePen VapePenMythical;
 	@Override
 	public ItemStack onItemRightClick(ItemStack itemstack, World world, EntityPlayer player) {
 		player.swingItem();
-			if(world.isRemote) {
+			if(!world.isRemote) {
 				for(int i = 0; i < 20; ++i)
 				world.spawnParticle(
 						"explode", 
