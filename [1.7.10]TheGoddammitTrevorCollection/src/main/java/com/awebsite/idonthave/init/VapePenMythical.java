@@ -11,7 +11,7 @@ public class VapePenMythical extends VapePen {
 	
 static VapePen VapePenMythical;
 	
-	private VapePenMythical() {
+	public VapePenMythical() {
 		setUnlocalizedName("vape_pen_mythical");
 		setTextureName(Main.MODID + ":vape_pen_mythical");
 	}

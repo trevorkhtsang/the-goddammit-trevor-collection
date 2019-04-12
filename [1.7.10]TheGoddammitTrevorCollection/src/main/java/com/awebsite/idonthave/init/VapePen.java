@@ -13,7 +13,7 @@ public class VapePen extends Item {
 
     static Item VapePen;
 
-    VapePen() {
+    public VapePen() {
         setUnlocalizedName("vape_pen");
         setTextureName(Main.MODID + ":vape_pen");
         setCreativeTab(CreativeTabs.tabTools);
@@ -29,7 +29,7 @@ public class VapePen extends Item {
     @Override
     public ItemStack onItemRightClick(ItemStack itemstack, World world, EntityPlayer player) {
         player.swingItem();
-        if (!world.isRemote) {
+        if (world.isRemote) {
             world.spawnParticle(
                     "explode",
                     player.posX,

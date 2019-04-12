@@ -8,7 +8,7 @@ import net.minecraftforge.common.util.EnumHelper;
 
 public class WoodDiamondPickaxe extends ItemPickaxe {
 
-    static WoodDiamondPickaxe WoodDiamondPickaxe;
+    public static WoodDiamondPickaxe WoodDiamondPickaxe;
 
     private static final ToolMaterial woodDiamond = EnumHelper.addToolMaterial(
             "wood_diamond",

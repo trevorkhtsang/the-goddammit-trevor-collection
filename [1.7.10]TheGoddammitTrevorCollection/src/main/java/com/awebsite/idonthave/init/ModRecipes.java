@@ -59,8 +59,8 @@ public class ModRecipes {
 				new Object[] {Blocks.red_flower, Items.sugar, Blocks.red_flower});
 		GameRegistry.addRecipe(new ItemStack(WoodDiamondPickaxe.WoodDiamondPickaxe, 1),
 				"XXX",
-				"Y",
-				"Y",
+				" Y ",
+				" Y ",
 				'X', Items.stick,
 				'Y', Items.diamond
 		);

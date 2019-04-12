@@ -12,7 +12,7 @@ public class VapePenLegendary extends VapePen {
 
     static VapePen VapePenLegendary;
 
-    private VapePenLegendary() {
+    public VapePenLegendary() {
         setUnlocalizedName("vape_pen_legendary");
         setTextureName(Main.MODID + ":vape_pen_legendary");
     }
