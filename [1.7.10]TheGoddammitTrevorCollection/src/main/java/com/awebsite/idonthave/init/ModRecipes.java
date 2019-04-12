@@ -55,9 +55,14 @@ public class ModRecipes {
 			" X ",
 			"X X",
 			'X', Blocks.cobblestone);
-		GameRegistry.addRecipe(new ItemStack(OdorBlocker.OdorBlocker, 1),
-			"XYX",
-			'X', Blocks.red_flower,
-			'Y', Blocks.reeds);
+		GameRegistry.addShapelessRecipe(new ItemStack(OdorBlocker.OdorBlocker, 1),
+				new Object[] {Blocks.red_flower, Items.sugar, Blocks.red_flower});
+		GameRegistry.addRecipe(new ItemStack(WoodDiamondPickaxe.WoodDiamondPickaxe, 1),
+				"XXX",
+				"Y",
+				"Y",
+				'X', Items.stick,
+				'Y', Items.diamond
+		);
 	}
 }

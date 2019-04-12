@@ -26,6 +26,7 @@ public class CommonProxy implements IProxy {
         FidgetSpinner.init();
         OdorBlocker.init();
         BlockOdorBlocker.init();
+        WoodDiamondPickaxe.init();
 
         //init items with default behavior, recipes and blocks
         ModItems.init();

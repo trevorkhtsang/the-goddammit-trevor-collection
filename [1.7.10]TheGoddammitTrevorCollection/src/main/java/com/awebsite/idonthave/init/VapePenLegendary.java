@@ -25,7 +25,7 @@ public class VapePenLegendary extends VapePen {
     @Override
     public ItemStack onItemRightClick(ItemStack itemstack, World world, EntityPlayer player) {
         player.swingItem();
-        if (!world.isRemote) {
+        if (world.isRemote) {
             for (int i = 0; i < 4; ++i)
                 world.spawnParticle(
                         "hugeexplosion",
