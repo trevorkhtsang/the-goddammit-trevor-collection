@@ -1,9 +1,8 @@
-package com.awebsite.idonthave.init;
+package com.awebsite.idonthave.init.items;
 
 import com.awebsite.idonthave.Main;
 
 import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.monster.EntityCreeper;
 import net.minecraft.entity.player.EntityPlayer;
@@ -20,7 +19,7 @@ public class CreeperSammich extends ItemFood {
 		super(healAmount, saturationModifier, wolvesFavorite);
 		setUnlocalizedName("creeper_sammich");
 		setTextureName(Main.MODID + ":creeper_sammich");
-		setCreativeTab(CreativeTabs.tabFood);
+		setCreativeTab(Main.tab);
 		setMaxStackSize(64);
 	}
     

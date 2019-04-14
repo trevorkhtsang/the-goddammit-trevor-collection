@@ -2,9 +2,9 @@ package com.awebsite.idonthave.init;
 
 import com.awebsite.idonthave.Main;
 
+import com.awebsite.idonthave.init.blocks.BlockOdorBlocker;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.BlockLiquid;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
@@ -19,7 +19,7 @@ public class OdorBlocker extends Item {
 	private OdorBlocker() {
 		setUnlocalizedName("odor_blocker");
 		setTextureName(Main.MODID + ":odor_blocker");
-		setCreativeTab(CreativeTabs.tabTools);
+		setCreativeTab(Main.tab);
 		setMaxStackSize(1);
 		setMaxDamage(128);
 	}
@@ -45,7 +45,7 @@ public class OdorBlocker extends Item {
 				world.setBlock(
 						(positionX),(positionY), 
 						(positionZ), BlockOdorBlocker.BlockOdorBlocker);
-				world.playSoundEffect(player.posX, player.posY, player.posZ, Main.MODID + ":ob_spawned", 1, 1);
+				world.playSoundEffect(player.posX, player.posY, player.posZ, Main.MODID + ":obspawned", 1, 1);
 				itemstack.damageItem(1, player);
 			}
 		}

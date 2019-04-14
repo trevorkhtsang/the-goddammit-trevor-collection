@@ -1,12 +1,12 @@
 {
-"ob_spawned": {
+"obspawned": {
 	"category": "master",
 	"sounds": [{
-		"name": "ob_spawned", 
+		"name": "obspawned",
 		"stream": false}]},
-"ob_destroyed": {
+"obdestroyed": {
 	"category": "master",
 	"sounds": [{
-	"name": "ob_destroyed", 
+	"name": "obdestroyed",
 	"stream": false}]}
 }

@@ -1,4 +1,4 @@
-package com.awebsite.idonthave.init;
+package com.awebsite.idonthave.init.blocks;
 
 import com.awebsite.idonthave.Main;
 
@@ -18,11 +18,11 @@ public class BlockOdorBlocker extends Block {
 		setBlockTextureName(Main.MODID + ":" + "block_odor_blocker");
 		setHardness(0.01F);
 		setHarvestLevel(null, 0);
-		SoundType sound = new SoundType(Main.MODID + "ob_destroyed", 1, 1) {
+		SoundType sound = new SoundType(Main.MODID + ":obdestroyed", 1, 1) {
 
 			@Override
 			public String getBreakSound() {
-				return Main.MODID + ":ob_destroyed";
+				return Main.MODID + ":obdestroyed";
 			}
 
 			/**
@@ -30,7 +30,7 @@ public class BlockOdorBlocker extends Block {
 			 */
 			@Override
 			public String func_150496_b() {
-				return Main.MODID + ":ob_spawned";
+				return Main.MODID + ":obspawned";
 			}
 			
 		};

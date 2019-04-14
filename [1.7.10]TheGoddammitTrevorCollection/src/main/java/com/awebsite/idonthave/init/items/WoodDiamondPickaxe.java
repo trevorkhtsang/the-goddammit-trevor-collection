@@ -1,8 +1,7 @@
-package com.awebsite.idonthave.init;
+package com.awebsite.idonthave.init.items;
 
 import com.awebsite.idonthave.Main;
 import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraftforge.common.util.EnumHelper;
 
@@ -22,7 +21,7 @@ public class WoodDiamondPickaxe extends ItemPickaxe {
         super(material);
         this.setUnlocalizedName("wood_diamond_pickaxe");
         this.setTextureName(Main.MODID + ":wood_diamond_pickaxe");
-        this.setCreativeTab(CreativeTabs.tabTools);
+        this.setCreativeTab(Main.tab);
         this.setMaxStackSize(1);
         this.setMaxDamage(1561);
     }

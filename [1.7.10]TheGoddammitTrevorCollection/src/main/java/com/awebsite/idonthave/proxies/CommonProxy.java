@@ -2,6 +2,12 @@ package com.awebsite.idonthave.proxies;
 
 import com.awebsite.idonthave.Main;
 import com.awebsite.idonthave.init.*;
+import com.awebsite.idonthave.init.blocks.BlockOdorBlocker;
+import com.awebsite.idonthave.init.entities.EntityBullet;
+import com.awebsite.idonthave.init.entities.EntityFidgetSpinner;
+import com.awebsite.idonthave.init.entities.EntityGun;
+import com.awebsite.idonthave.init.entities.EntityGunGun;
+import com.awebsite.idonthave.init.items.*;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -27,6 +33,8 @@ public class CommonProxy implements IProxy {
         OdorBlocker.init();
         BlockOdorBlocker.init();
         WoodDiamondPickaxe.init();
+        FakeDiamond.init();
+        JellyBeans.init();
 
         //init items with default behavior, recipes and blocks
         ModItems.init();

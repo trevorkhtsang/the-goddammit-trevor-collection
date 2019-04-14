@@ -1,7 +1,8 @@
-package com.awebsite.idonthave.init;
+package com.awebsite.idonthave.init.entities;
 
 import com.awebsite.idonthave.Main;
 
+import com.awebsite.idonthave.init.items.GunGun;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.projectile.EntityThrowable;

@@ -1,13 +1,13 @@
 package com.awebsite.idonthave.proxies;
 
 import com.awebsite.idonthave.Main;
-import com.awebsite.idonthave.init.EntityBullet;
-import com.awebsite.idonthave.init.EntityFidgetSpinner;
-import com.awebsite.idonthave.init.EntityGun;
-import com.awebsite.idonthave.init.EntityGunGun;
-import com.awebsite.idonthave.init.FidgetSpinner;
-import com.awebsite.idonthave.init.Gun;
-import com.awebsite.idonthave.init.GunGun;
+import com.awebsite.idonthave.init.entities.EntityBullet;
+import com.awebsite.idonthave.init.entities.EntityFidgetSpinner;
+import com.awebsite.idonthave.init.entities.EntityGun;
+import com.awebsite.idonthave.init.entities.EntityGunGun;
+import com.awebsite.idonthave.init.items.FidgetSpinner;
+import com.awebsite.idonthave.init.items.Gun;
+import com.awebsite.idonthave.init.items.GunGun;
 import com.awebsite.idonthave.init.ModItems;
 
 import cpw.mods.fml.client.registry.RenderingRegistry;

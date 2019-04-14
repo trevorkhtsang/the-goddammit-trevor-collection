@@ -9,4 +9,16 @@ item.creeper_sammich.name=Creeper Sammich
 item.fidget_spinner.name=Fidget Spinner
 item.odor_blocker.name=OLD SPICE ODOR BLOCKER
 item.wood_diamond_pickaxe.name=Diamond Pickaxe...?
+item.iront_ingot.name=Iron't Ingot
+item.quartz_mass.name=Pile of Quartz
+item.fake_crystal.name=Mildly Convincing Crystal
+item.fake_diamond_1.name=Diamon't
+item.fake_diamond_2.name=Diameh
+item.fake_diamond_3.name=Diamight
+item.fake_diamond_4.name=Diamaybe
+item.skull_base.name="Head"
+item.jelly_beans.name=Jelly Beans
+
 tile.block_odor_blocker.name=Terry Crews
+
+itemGroup.The Goddammit Trevor Collection=The Goddammit Trevor Collection

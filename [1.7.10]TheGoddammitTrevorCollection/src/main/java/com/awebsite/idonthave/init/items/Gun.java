@@ -1,9 +1,10 @@
-package com.awebsite.idonthave.init;
+package com.awebsite.idonthave.init.items;
 
 import com.awebsite.idonthave.Main;
 
+import com.awebsite.idonthave.init.entities.EntityBullet;
+import com.awebsite.idonthave.init.ModItems;
 import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -16,7 +17,7 @@ public class Gun extends Item {
 	public Gun() {
 		setUnlocalizedName("gun");
 		setTextureName(Main.MODID + ":gun");
-		setCreativeTab(CreativeTabs.tabCombat);
+		setCreativeTab(Main.tab);
 		setMaxStackSize(64);
 		setMaxDamage(0);
 	}
